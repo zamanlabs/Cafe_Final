@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Caffein</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a href="index.html" class="back-home">
+        <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+    
+    <section id="signup" class="auth-section">
+        <div class="coffee-beans">
+            <div class="coffee-bean" style="--tx: 80vw; --ty: -20vh; animation-duration: 12s; animation-delay: 0s; left: 5%; top: 20%;"></div>
+            <div class="coffee-bean" style="--tx: -40vw; --ty: 70vh; animation-duration: 15s; animation-delay: 1s; left: 75%; top: 50%;"></div>
+            <div class="coffee-bean" style="--tx: 60vw; --ty: 80vh; animation-duration: 18s; animation-delay: 3s; left: 25%; top: 10%;"></div>
+            <div class="coffee-bean" style="--tx: -30vw; --ty: -30vh; animation-duration: 14s; animation-delay: 5s; left: 60%; top: 30%;"></div>
+            <div class="coffee-bean" style="--tx: -50vw; --ty: 50vh; animation-duration: 16s; animation-delay: 7s; left: 90%; top: 60%;"></div>
+            <div class="coffee-bean" style="--tx: 70vw; --ty: -60vh; animation-duration: 20s; animation-delay: 2s; left: 15%; top: 70%;"></div>
+        </div>
+        <div class="auth-container">
+            <div class="tabs">
+                <div class="tab" id="signin-tab">Sign In</div>
+                <div class="tab active" id="signup-tab">Sign Up</div>
+            </div>
+            <form id="auth-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <button type="button" id="submit-btn" class="auth-btn">Sign Up</button>
+                <div class="divider">
+                    <span>or</span>
+                </div>
+                <div class="social-icons" style="display: flex; justify-content: center; gap: 40px; margin: 25px 0;">
+                    <a href="#" class="social-icon" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: white; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border: 1px solid rgba(139,69,19,0.1);">
+                        <img src="Images & Videos/google.png" alt="Google" style="width: 25px; height: 25px; object-fit: contain;">
+                    </a>
+                    <a href="#" class="social-icon" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: white; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border: 1px solid rgba(139,69,19,0.1);">
+                        <img src="Images & Videos/facebook.png" alt="Facebook" style="width: 25px; height: 25px; object-fit: contain;">
+                    </a>
+                </div>
+                <p class="footer-text">Already have an account? <a href="signin.html">Sign In</a></p>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 

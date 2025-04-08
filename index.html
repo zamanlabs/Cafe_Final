@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffein - Perfect Coffee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="premium-header">
+        <div class="logo slide-in-left">
+            <img src="Images & Videos/coffee.png" alt="Caffein Logo" class="logo-img">
+            <span>Caffein</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link vibrate-1">Home</a></li>
+                <li><a href="#about" class="nav-link vibrate-1">About</a></li>
+                <li><a href="#menu" class="nav-link vibrate-1">Menu</a></li>
+                <li><a href="#reviews" class="nav-link vibrate-1">Reviews</a></li>
+                <li><a href="contact.html" class="nav-link vibrate-1">Contact</a></li>
+            </ul>
+            <a href="signin.html" class="signin-btn scale-in-center">Sign In</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="Images & Videos/coffee-video.mp4" type="video/mp4">
+        </video>
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to Caffein</h1>
+            <p>Experience the <span class="perfect-text">perfect</span> blend of taste and tradition</p>
+            <a href="#menu" class="cta-button">
+                Explore Menu
+                <span class="shine"></span>
+            </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Caffein</h2>
+        <p>Welcome to Caffein – where passion meets perfection in every cup. Our artisan café offers a curated selection of premium coffees sourced from around the world, paired with delectable pastries and a warm, inviting atmosphere. Whether you're seeking a quiet corner to work, a place to connect with friends, or simply a moment of caffeinated bliss, we've crafted the perfect space for you. Come experience the art of coffee at Caffein.</p>
+        
+        <div class="about-images">
+            <div class="about-image-container float">
+                <img src="Images & Videos/about-coffee1.jpg" alt="Coffee Brewing">
+                <div class="image-overlay"></div>
+                <p class="image-caption">Artisan Coffee Brewing</p>
+            </div>
+            <div class="about-image-container float">
+                <img src="Images & Videos/about-coffee2.jpg" alt="Coffee Beans">
+                <div class="image-overlay"></div>
+                <p class="image-caption">Premium Coffee Beans</p>
+            </div>
+            <div class="about-image-container float">
+                <img src="Images & Videos/about-coffee3.jpg" alt="Café Interior">
+                <div class="image-overlay"></div>
+                <p class="image-caption">Cozy Café Experience</p>
+            </div>
+        </div>
+        
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">15</div>
+                <div class="stat-title">Years of Excellence</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">120K+</div>
+                <div class="stat-title">Happy Customers</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">42</div>
+                <div class="stat-title">Coffee Varieties</div>
+            </div>
+        </div>
+        
+        <div class="awards-section">
+            <h3 class="awards-title">Our Recognitions</h3>
+            <div class="awards-container">
+                <div class="award-item">
+                    <div class="award-badge"></div>
+                    <div class="award-details">
+                        <h4>Best Café 2023</h4>
+                        <p>City Excellence Awards</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <div class="master-brewer"></div>
+                    <div class="award-details">
+                        <h4>Master Brewers</h4>
+                        <p>International Coffee Association</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="filter">
+            <button onclick="filterCoffee('hot')">HOT</button>
+            <button onclick="filterCoffee('cold')">COLD</button>
+        </div>
+        <div id="menu-container" class="coffee-container"></div>
+    </section>
+
+    <section id="reviews">
+        <div class="reviews-container">
+            <div class="reviews-header">
+                <h2>Customer Experiences</h2>
+                <p class="reviews-subtitle">See what our coffee lovers have to say</p>
+            </div>
+            
+            <div class="reviews-carousel">
+                <div class="reviews-track">
+                    <!-- Review Card 1 -->
+                    <div class="review-card">
+                        <div class="review-card-inner">
+                            <div class="review-profile">
+                                <div class="review-avatar">
+                                    <div class="avatar-icon">☕</div>
+                                </div>
+                                <div class="review-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>"The atmosphere is amazing! I come here to work remotely at least twice a week. Their cappuccino is the perfect blend of rich espresso and creamy milk. Absolutely love this place!"</p>
+                            </div>
+                            <div class="review-author">
+                                <h4>Sarah Johnson</h4>
+                                <span>Regular Customer</span>
+                            </div>
+                            <div class="review-date">September 2023</div>
+                            <div class="coffee-bean coffee-bean-1"></div>
+                            <div class="coffee-bean coffee-bean-2"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Review Card 2 -->
+                    <div class="review-card">
+                        <div class="review-card-inner">
+                            <div class="review-profile">
+                                <div class="review-avatar">
+                                    <div class="avatar-icon">🥤</div>
+                                </div>
+                                <div class="review-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star half">★</span>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>"Finally found a coffee shop that understands what real cold brew should taste like! Smooth, refreshing, and never bitter. Their pastries are also exceptional. Highly recommend!"</p>
+                            </div>
+                            <div class="review-author">
+                                <h4>Michael Chen</h4>
+                                <span>Coffee Enthusiast</span>
+                            </div>
+                            <div class="review-date">August 2023</div>
+                            <div class="coffee-bean coffee-bean-1"></div>
+                            <div class="coffee-bean coffee-bean-2"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Review Card 3 -->
+                    <div class="review-card featured">
+                        <div class="review-card-inner">
+                            <div class="review-profile">
+                                <div class="review-avatar">
+                                    <div class="avatar-icon">👩‍🍳</div>
+                                </div>
+                                <div class="review-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>"As a coffee connoisseur, I'm incredibly impressed by the quality and attention to detail at Caffein. Their single-origin espresso is outstanding, and the staff is deeply knowledgeable about their beans. A hidden gem!"</p>
+                            </div>
+                            <div class="review-author">
+                                <h4>Olivia Rodriguez</h4>
+                                <span>Professional Barista</span>
+                            </div>
+                            <div class="review-date">October 2023</div>
+                            <div class="coffee-bean coffee-bean-1"></div>
+                            <div class="coffee-bean coffee-bean-2"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Review Card 4 -->
+                    <div class="review-card">
+                        <div class="review-card-inner">
+                            <div class="review-profile">
+                                <div class="review-avatar">
+                                    <div class="avatar-icon">🌍</div>
+                                </div>
+                                <div class="review-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>"I've been to coffee shops all over the world, and Caffein ranks among the best. Their mocha is perfectly balanced between chocolate and coffee. The ambiance is cozy yet upscale. Worth every penny!"</p>
+                            </div>
+                            <div class="review-author">
+                                <h4>James Wilson</h4>
+                                <span>World Traveler</span>
+                            </div>
+                            <div class="review-date">July 2023</div>
+                            <div class="coffee-bean coffee-bean-1"></div>
+                            <div class="coffee-bean coffee-bean-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reviews-navigation">
+                <button id="prev-review" class="review-nav-btn" aria-label="Previous review">
+                    <span class="arrow">←</span>
+                </button>
+                <div class="review-dots">
+                    <button class="review-dot active" aria-label="Go to review 1"></button>
+                    <button class="review-dot" aria-label="Go to review 2"></button>
+                    <button class="review-dot" aria-label="Go to review 3"></button>
+                    <button class="review-dot" aria-label="Go to review 4"></button>
+                </div>
+                <button id="next-review" class="review-nav-btn" aria-label="Next review">
+                    <span class="arrow">→</span>
+                </button>
+            </div>
+            
+            <div class="reviews-cta">
+                <p>Experience our exceptional coffee for yourself</p>
+                <a href="#menu" class="review-cta-button">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@caffeinecoffee.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <div class="contact-links">
+            <a href="contact.html" class="contact-link">Visit our Contact Page</a>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="premium-footer">
+        <div class="footer-content">
+            <div class="footer-logo slide-in-left">
+                <img src="Images & Videos/coffee.png" alt="Caffein Logo" class="footer-logo-img">
+                <h3>Caffein</h3>
+                <p>Experience the perfect blend of taste and tradition</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" class="jello-horizontal">Home</a></li>
+                        <li><a href="#about" class="jello-horizontal">About</a></li>
+                        <li><a href="#menu" class="jello-horizontal">Menu</a></li>
+                        <li><a href="#reviews" class="jello-horizontal">Reviews</a></li>
+                        <li><a href="#contact" class="jello-horizontal">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Opening Hours</h4>
+                    <ul class="hours">
+                        <li>Monday - Friday: 7AM - 9PM</li>
+                        <li>Saturday: 8AM - 10PM</li>
+                        <li>Sunday: 8AM - 8PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="heartbeat"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="heartbeat"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="heartbeat"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Subscribe to newsletter">
+                        <button type="submit" class="pulsate-fwd">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Caffein. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

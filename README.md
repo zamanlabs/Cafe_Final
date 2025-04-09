@@ -125,7 +125,7 @@ This project is intended for educational purposes. All image resources are used 
 
 ## Credits
 
-- Design & Development: ZamanLabs
+- Design & Development: Zentorra Web Devlopment Team - 2
 - Fonts: Google Fonts (Playfair Display & Poppins)
 - Icons: Font Awesome
 - Images: Various coffee-themed stock photos 
